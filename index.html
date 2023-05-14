@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body style="background-color: #2f4f4f">
+    <fieldset style="background-color: #2e6e6e">
+      <legend style="background-color: #5f9ea0">Personal Data</legend>
+      <fieldset style="background-color: #5f9ea0">
+        <legend
+          style="
+            background-color: #3e858b;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div>Your Name</div>
+        </legend>
+        <table>
+          <tr>
+            <td>
+              <label for="fname">First Name</label>
+            </td>
+            <td>
+              :
+              <input type="text" id="fname" name="fname" placeholder="ex.Amr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sname">Second Name</label>
+            </td>
+            <td>
+              :
+              <input type="text" id="sname" name="sname" placeholder="ex.Ali" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <table>
+        <tr>
+          <td><label for="phone">Your Phone</label></td>
+          <td>: <input type="tel" name="phone" id="phone" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td>: <input type="email" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td>: <input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="repassword">re-Password</label></td>
+          <td>: <input type="password" name="repassword" id="repassword" /></td>
+        </tr>
+      </table>
+      <br /><br />
+      <input type="radio" checked value="male" name="gender" id="male" />
+      <label for="male">Male</label>
+      <br />
+      <input type="radio" value="female" name="gender" id="female" />
+      <label for="female">Female</label>
+
+      <br />
+      <br />
+      <input type="checkbox" value="student" name="level" id="student" />
+      <label for="student">Student</label>
+      <br />
+      <input type="checkbox" value="grad" name="level" id="grad" />
+      <label for="grad">Graduated</label>
+      <br />
+      <br />
+      <label for="university">University</label>
+      :<select name="university" id="university">
+        <option selected value="AUC">AUC</option>
+        <option value="BUE">BUE</option>
+        <option value="GUC">GUC</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </fieldset>
+  </body>
+</html>
